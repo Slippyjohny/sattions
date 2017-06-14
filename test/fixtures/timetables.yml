@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  arrival_time: 2017-06-14
+  departure_time: 2017-06-14
+  station: 
+
+two:
+  arrival_time: 2017-06-14
+  departure_time: 2017-06-14
+  station: 

@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username:
+  password:
+  pool: 25
+
+development:
+  <<: *default
+  database: station_development
+  pool: 25
+
+test:
+  <<: *default
+  database: station_test
+
+production:
+  <<: *default
+  database: station_production
+  username:
+  password:
+  pool: 25
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  secret_key_base:
